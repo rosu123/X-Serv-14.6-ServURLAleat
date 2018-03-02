@@ -2,6 +2,7 @@
 
 import webapp
 
+
 class URLAleat(webapp.webApp):
     def process(self, parsedRequest):
         """Process the relevant elements of the request.
@@ -10,7 +11,7 @@ class URLAleat(webapp.webApp):
         """
         import random
         return ("200 OK", "<html><body><h1><a href='" +
-str(random.randint(1,100000)) + "'>Dame otra!</a></h1></body></html>")
+                str(random.randint(1, 100000)) + "'>Dame otra!</a></h1></body></html>")
 
 
 if __name__ == "__main__":
